@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-37-2 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-37-2>
+                <actors-in-group comment="false" x="26" y="65">
+                    <group eventID="1" id="-1">
+                        <set-val-37-2 comment="false" x="37" y="97">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-37-2>
+                    </group>
+                    <actorgroup eid="4" id="0"/>
+                </actors-in-group>
+                <if comment="false" x="26" y="134">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="164">
+                            <group eventID="-1" id="-1">
+                                <scene-change-new comment="false" x="48" y="194">
+                                    <scene eid="var" id="0" vid="3"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-37-4 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                    <int id="4" val="1"/>
+                                </scene-change-new>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <is-transitioning comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-37-2 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

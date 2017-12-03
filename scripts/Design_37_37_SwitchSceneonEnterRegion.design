@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-37-7 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-37-7>
+                <if comment="false" x="26" y="65">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="113">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="146">
+                                    <group eventID="1" id="-1">
+                                        <set-val-37-7 comment="false" x="59" y="171">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-37-7>
+                                    </group>
+                                    <get-val-37-8 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="208">
+                                    <group eventID="1" id="-1">
+                                        <say-this comment="false" x="59" y="228">
+                                            <int id="0" val="SwitchScene"/>
+                                        </say-this>
+                                    </group>
+                                </else>
+                            </group>
+                            <is-in-region comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                                <REGION eid="var" id="1" vid="1"/>
+                            </is-in-region>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="4"/>
+                                <int id="1" val="0"/>
+                            </value>
+                            <isalive comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                            </isalive>
+                        </and>
+                        <and comment="false" id="1" x="0" y="0">
+                            <and comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                                <value comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                            </and>
+                            <not comment="false" id="1" x="0" y="0">
+                                <is-transitioning comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </and>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <say-this comment="false" x="37" y="67">
+                            <int id="0" val="SwitchScene"/>
+                        </say-this>
+                    </group>
+                    <get-val-37-7 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <control eid="var" id="0" vid="9"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="78">
+                            <group eventID="12" id="-1">
+                                <scene-change-new comment="false" x="48" y="108">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="0"/>
+                                    <get-val-37-11 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Fade"/>
+                            </eq>
+                        </if>
+                        <else-if comment="false" x="37" y="152">
+                            <group eventID="12" id="-1">
+                                <scene-change-new comment="false" x="48" y="182">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="1"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="1"/>
+                                    <get-val-37-11 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Blinds"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="226">
+                            <group eventID="12" id="-1">
+                                <scene-change-new comment="false" x="48" y="256">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="2"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="2"/>
+                                    <get-val-37-11 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Bubbles"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="300">
+                            <group eventID="12" id="-1">
+                                <scene-change-new comment="false" x="48" y="330">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="3"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="3"/>
+                                    <get-val-37-11 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Spotlight"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="374">
+                            <group eventID="12" id="-1">
+                                <scene-change-new comment="false" x="48" y="404">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="4"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="4"/>
+                                    <get-val-37-11 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Blur"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="448">
+                            <group eventID="12" id="-1">
+                                <scene-change-new comment="false" x="48" y="478">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="5"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                    <int id="3" val="5"/>
+                                    <get-val-37-11 comment="false" id="4" x="0" y="0"/>
+                                </scene-change-new>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Box"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="522">
+                            <group eventID="12" id="-1">
+                                <scene-change-through comment="false" x="48" y="552">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                </scene-change-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Crossfade"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="596">
+                            <group eventID="12" id="-1">
+                                <scene-change-through comment="false" x="48" y="626">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="1"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                </scene-change-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Up"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="670">
+                            <group eventID="12" id="-1">
+                                <scene-change-through comment="false" x="48" y="700">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="2"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                </scene-change-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Down"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="744">
+                            <group eventID="12" id="-1">
+                                <scene-change-through comment="false" x="48" y="774">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="3"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                </scene-change-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Left"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="818">
+                            <group eventID="12" id="-1">
+                                <scene-change-through comment="false" x="48" y="848">
+                                    <scene eid="var" id="0" vid="2"/>
+                                    <int id="1" val="4"/>
+                                    <get-val-37-10 comment="false" id="2" x="0" y="0"/>
+                                </scene-change-through>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-37-12 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="Slide Right"/>
+                            </eq>
+                        </else-if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <is-transitioning comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="SwitchScene"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

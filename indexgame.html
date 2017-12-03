@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Deep Game!</title>
+<head><link rel="icon" href="Sites-icon.png" type="image" />
+<link rel="stylesheet" type="text/css" href="history/history.css" />
+        <script type="text/javascript" src="history/history.js"></script>
+
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript">
+           
+            var swfVersionStr = "10.0.0";
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+            var params = {};
+            params.quality = "low";
+            params.bgcolor = "#7F8C8D";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "StencylMain";
+            attributes.name = "StencylMain";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "Game.swf", "flashContent", 
+                "1024", "480", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+      swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-highway.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-safety.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style type="text/css" media="screen">
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif
+}
+.w3-navbar,h1,button {
+  font-family: "Montserrat", sans-serif
+}
+.fa-anchor,.fa-coffee {
+  font-size:200px
+}
+#a{
+  font-size: 12px;
+  text-align: center;
+}
+#img{
+  background-image: url('3.gif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#imgs{
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+#p{
+  text-align: justify;
+}
+html, body{ 
+  height:100%;
+ }
+ body { 
+  margin:0; 
+  padding:0; 
+  overflow:auto; 
+  text-align:center; 
+  background-color: #7F8C8D; }   
+ #flashContent { 
+  display:none;
+  margin-top: 50px; 
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<ul id ="lista" class="w3-navbar w3-safety-green w3-card-2 w3-top w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Alternar menu de navegação"><i class="fa fa-bars"></i></a>
+  </li>
+  <li> <a href="index.html" class="w3-padding-large  w3-hover-white">Página Inicial</a></li>
+  <li class="w3-hide-small"><a href="indexgame.html" class="w3-padding-large w3-white w3-hover-black">Jogar</a></li>
+   <li class="w3-hide-small"><a href="historia.html" class="w3-padding-large w3-hover-white">História</a></li>
+  <li class="w3-hide-small"><a href="fase1.html" class="w3-padding-large w3-hover-white">Fases</a></li>
+ 
+</ul>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+  <ul class="w3-navbar w3-left-align w3-large w3-black">
+    <li><a class="w3-padding-large" href="indexgame.html">Jogo</a></li>
+    <li><a class="w3-padding-large" href="fase1.html">Fases</a></li>
+    <li><a class="w3-padding-large" href="historia">História</a></li>
+  </ul>
+</div>
+
+
+
+<!-- First Grid -->
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div id="flashContent">
+
+          <p>
+            To view this page ensure that Adobe Flash Player version 
+        10.0.0 or greater is installed. 
+      </p>
+      <script type="text/javascript"> 
+        var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://"); 
+        document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+                + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+      </script> 
+    </div>
+
+    <noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1024" height="480" id="Game">
+                <param name="movie" value="Game.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#7F8C8D" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="Game.swf" width="1024" height="480">
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#7F8C8D" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                  <p> 
+                    Either scripts and active content are not permitted to run or Adobe Flash Player version
+                    10.0.0 or greater is not installed.
+                  </p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+      </noscript> 
+</div>
+    <span> É recomendável ler a história antes de jogar! </span>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Deep Game! - O jogo ambientado na Deep Web.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-google"></i></a>
+
+ </div>
+ 
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>

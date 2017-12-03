@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="38" y="25">
+            <group eventID="1" id="-1">
+                <stop-sounds comment="false" x="49" y="50"/>
+                <play-sound4 comment="false" x="49" y="70">
+                    <int id="0" val="1"/>
+                    <sound eid="109" id="1"/>
+                </play-sound4>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

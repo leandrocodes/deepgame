@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-25-1 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                </set-val-25-1>
+                <set-val-25-2 comment="false" x="26" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                </set-val-25-2>
+                <if comment="false" x="26" y="106">
+                    <group eventID="1" id="-1">
+                        <set-val-25-3 comment="false" x="37" y="136">
+                            <int id="0" val="0"/>
+                        </set-val-25-3>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <if comment="false" x="26" y="168">
+                    <group eventID="1" id="-1">
+                        <set-val-25-10 comment="false" x="37" y="198">
+                            <int id="0" val="0"/>
+                        </set-val-25-10>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-25-10 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <incdec comment="false" x="26" y="230">
+                    <int id="0" val="3"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <incdec comment="false" x="26" y="257">
+                    <int id="0" val="10"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
+                <dolater comment="false" x="26" y="284">
+                    <group eventID="1" id="-1">
+                        <set-val-25-9 comment="false" x="37" y="311">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-25-9>
+                    </group>
+                    <int id="0" val="0.02"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <comment-wrapper comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="60">
+                            <group eventID="1" id="-1">
+                                <set-val-25-4 comment="false" x="48" y="103">
+                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-xy>
+                                </set-val-25-4>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <get-val-25-9 comment="false" id="0" x="0" y="0"/>
+                                <more comment="false" id="1" x="0" y="0">
+                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-xy>
+                                    <get-val-25-4 comment="false" id="1" x="0" y="0"/>
+                                </more>
+                            </and>
+                        </if>
+                    </group>
+                    <int id="0" val="Detects the max distance the camera has moved so far."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="160">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="180">
+                            <group eventID="2" id="-1">
+                                <set-val-25-5 comment="false" x="48" y="210">
+                                    <get-val-25-4 comment="false" id="0" x="0" y="0"/>
+                                </set-val-25-5>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-25-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                        <else-if comment="false" x="37" y="247">
+                            <group eventID="1" id="-1">
+                                <set-val-25-5 comment="false" x="48" y="277">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-4 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-25-6 comment="false" id="1" x="0" y="0"/>
+                                    </minus>
+                                </set-val-25-5>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <get-val-25-6 comment="false" id="1" x="0" y="0"/>
+                            </less>
+                        </else-if>
+                    </group>
+                    <int id="0" val="Controls how far backwards the camera/player can move."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="331">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="351">
+                            <group eventID="1" id="-1">
+                                <set-xy comment="false" x="48" y="394">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <get-val-25-5 comment="false" id="2" x="0" y="0"/>
+                                </set-xy>
+                                <set-dxy comment="false" x="48" y="426">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </set-dxy>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <less comment="false" id="0" x="0" y="0">
+                                    <get-dxy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-dxy>
+                                    <int id="1" val="0"/>
+                                </less>
+                                <lesseq comment="false" id="1" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                    <get-val-25-5 comment="false" id="1" x="0" y="0"/>
+                                </lesseq>
+                            </and>
+                        </if>
+                        <if comment="false" x="37" y="465">
+                            <group eventID="1" id="-1">
+                                <set-xy comment="false" x="48" y="503">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </set-xy>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <int id="1" val="0"/>
+                            </lesseq>
+                        </if>
+                    </group>
+                    <int id="0" val="Prevents the player from leaving the left side of the screen."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="554">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="574">
+                            <group eventID="3" id="-1">
+                                <set-val-25-12 comment="false" x="48" y="617">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-25-12>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <keystate comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <control eid="var" id="1" vid="15"/>
+                                </keystate>
+                                <not comment="false" id="1" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <control eid="var" id="1" vid="16"/>
+                                    </keystate>
+                                </not>
+                            </and>
+                        </if>
+                        <else-if comment="false" x="37" y="654">
+                            <group eventID="3" id="-1">
+                                <set-val-25-12 comment="false" x="48" y="697">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-25-12>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <keystate comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <control eid="var" id="1" vid="16"/>
+                                </keystate>
+                                <not comment="false" id="1" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <control eid="var" id="1" vid="15"/>
+                                    </keystate>
+                                </not>
+                            </and>
+                        </else-if>
+                    </group>
+                    <int id="0" val="Detects if the player is facing left or right."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="746">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="766">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="48" y="791">
+                                    <group eventID="3" id="-1">
+                                        <set-val-25-13 comment="false" x="59" y="821">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <get-val-25-13 comment="false" id="0" x="0" y="0"/>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <get-val-25-11 comment="false" id="0" x="0" y="0"/>
+                                                        <get-val-25-13 comment="false" id="1" x="0" y="0"/>
+                                                    </minus>
+                                                    <div comment="false" id="1" x="0" y="0">
+                                                        <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </div>
+                                                </div>
+                                            </plus>
+                                        </set-val-25-13>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-val-25-13 comment="false" id="0" x="0" y="0"/>
+                                        <get-val-25-11 comment="false" id="1" x="0" y="0"/>
+                                    </less>
+                                </if>
+                            </group>
+                            <get-val-25-12 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="885">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="48" y="905">
+                                    <group eventID="3" id="-1">
+                                        <set-val-25-13 comment="false" x="59" y="940">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <get-val-25-13 comment="false" id="0" x="0" y="0"/>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <neg comment="false" id="0" x="0" y="0">
+                                                            <get-val-25-11 comment="false" id="0" x="0" y="0"/>
+                                                        </neg>
+                                                        <get-val-25-13 comment="false" id="1" x="0" y="0"/>
+                                                    </minus>
+                                                    <div comment="false" id="1" x="0" y="0">
+                                                        <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </div>
+                                                </div>
+                                            </plus>
+                                        </set-val-25-13>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <neg comment="false" id="0" x="0" y="0">
+                                            <get-val-25-11 comment="false" id="0" x="0" y="0"/>
+                                        </neg>
+                                        <get-val-25-13 comment="false" id="1" x="0" y="0"/>
+                                    </less>
+                                </if>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="Controls the horizontal easing."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="1021">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="1041">
+                            <group eventID="2" id="-1">
+                                <set-val-25-1 comment="false" x="48" y="1094">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-1 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <plus comment="false" id="0" x="0" y="0">
+                                                    <get-val-25-5 comment="false" id="0" x="0" y="0"/>
+                                                    <div comment="false" id="1" x="0" y="0">
+                                                        <screen-wh comment="false" id="0" x="0" y="0">
+                                                            <int id="0" val="0"/>
+                                                        </screen-wh>
+                                                        <int id="1" val="2"/>
+                                                    </div>
+                                                </plus>
+                                                <get-val-25-1 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </times>
+                                        </div>
+                                    </plus>
+                                </set-val-25-1>
+                                <set-val-25-14 comment="false" x="48" y="1152">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-14 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <neg comment="false" id="0" x="0" y="0">
+                                                <get-val-25-14 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </times>
+                                        </div>
+                                    </plus>
+                                </set-val-25-14>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-5 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-wh>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </plus>
+                                    <neg comment="false" id="1" x="0" y="0">
+                                        <get-val-25-13 comment="false" id="0" x="0" y="0"/>
+                                    </neg>
+                                </minus>
+                            </lesseq>
+                        </if>
+                        <else-if comment="false" x="37" y="1204">
+                            <group eventID="2" id="-1">
+                                <set-val-25-1 comment="false" x="48" y="1257">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-1 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                    </scene-wh>
+                                                    <div comment="false" id="1" x="0" y="0">
+                                                        <screen-wh comment="false" id="0" x="0" y="0">
+                                                            <int id="0" val="0"/>
+                                                        </screen-wh>
+                                                        <int id="1" val="2"/>
+                                                    </div>
+                                                </minus>
+                                                <get-val-25-1 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </times>
+                                        </div>
+                                    </plus>
+                                </set-val-25-1>
+                                <set-val-25-14 comment="false" x="48" y="1315">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-14 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <neg comment="false" id="0" x="0" y="0">
+                                                <get-val-25-14 comment="false" id="0" x="0" y="0"/>
+                                            </neg>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </times>
+                                        </div>
+                                    </plus>
+                                </set-val-25-14>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <scene-wh comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </scene-wh>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-wh>
+                                            <int id="1" val="2"/>
+                                        </div>
+                                    </minus>
+                                    <neg comment="false" id="1" x="0" y="0">
+                                        <get-val-25-13 comment="false" id="0" x="0" y="0"/>
+                                    </neg>
+                                </minus>
+                            </moreeq>
+                        </else-if>
+                        <else comment="false" x="37" y="1367">
+                            <group eventID="2" id="-1">
+                                <set-val-25-1 comment="false" x="48" y="1387">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-1 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-val-25-1 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </times>
+                                        </div>
+                                    </plus>
+                                </set-val-25-1>
+                                <set-val-25-14 comment="false" x="48" y="1435">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-14 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <get-val-25-13 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-25-14 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <times comment="false" id="1" x="0" y="0">
+                                                <get-val-25-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </times>
+                                        </div>
+                                    </plus>
+                                </set-val-25-14>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="Adjusts the camera&amp;apos;s x position with horizontal easing."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="1499">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="1519">
+                            <group eventID="2" id="-1">
+                                <set-val-25-2 comment="false" x="48" y="1562">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-2 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <div comment="false" id="0" x="0" y="0">
+                                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                    </screen-wh>
+                                                    <int id="1" val="2"/>
+                                                </div>
+                                                <get-val-25-2 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <get-val-25-10 comment="false" id="1" x="0" y="0"/>
+                                        </div>
+                                    </plus>
+                                </set-val-25-2>
+                            </group>
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                            </lesseq>
+                        </if>
+                        <else-if comment="false" x="37" y="1627">
+                            <group eventID="2" id="-1">
+                                <set-val-25-2 comment="false" x="48" y="1675">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-2 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                    </scene-wh>
+                                                    <div comment="false" id="1" x="0" y="0">
+                                                        <screen-wh comment="false" id="0" x="0" y="0">
+                                                            <int id="0" val="1"/>
+                                                        </screen-wh>
+                                                        <int id="1" val="2"/>
+                                                    </div>
+                                                </minus>
+                                                <get-val-25-2 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <get-val-25-10 comment="false" id="1" x="0" y="0"/>
+                                        </div>
+                                    </plus>
+                                </set-val-25-2>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </scene-wh>
+                                    <div comment="false" id="1" x="0" y="0">
+                                        <screen-wh comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="1"/>
+                                        </screen-wh>
+                                        <int id="1" val="2"/>
+                                    </div>
+                                </minus>
+                            </moreeq>
+                        </else-if>
+                        <else comment="false" x="37" y="1745">
+                            <group eventID="2" id="-1">
+                                <set-val-25-2 comment="false" x="48" y="1765">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-val-25-2 comment="false" id="0" x="0" y="0"/>
+                                        <div comment="false" id="1" x="0" y="0">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-val-25-2 comment="false" id="1" x="0" y="0"/>
+                                            </minus>
+                                            <get-val-25-10 comment="false" id="1" x="0" y="0"/>
+                                        </div>
+                                    </plus>
+                                </set-val-25-2>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="Adjusts the camera&amp;apos;s y position with vertical easing."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="1837">
+                    <group eventID="2" id="-1">
+                        <camera-move comment="false" x="37" y="1857">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-25-1 comment="false" id="0" x="0" y="0"/>
+                                <get-val-25-14 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <get-val-25-2 comment="false" id="1" x="0" y="0"/>
+                        </camera-move>
+                    </group>
+                    <int id="0" val="Finally, positions the camera."/>
+                </comment-wrapper>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

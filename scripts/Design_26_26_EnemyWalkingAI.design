@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-dxy comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-val-26-3 comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </set-dxy>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <get-val-26-1 comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="127">
+                    <group eventID="-1" id="-1">
+                        <set-dxy comment="false" x="37" y="165">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-26-3 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <get-val-26-2 comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <setanim comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <string-to-anim comment="false" id="1" x="0" y="0">
+                        <get-val-26-1 comment="false" id="0" x="0" y="0"/>
+                    </string-to-anim>
+                </setanim>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="-1" id="-1">
+                        <setanim comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-26-1 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <collision-right comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-right>
+                </if>
+                <if comment="false" x="26" y="122">
+                    <group eventID="-1" id="-1">
+                        <setanim comment="false" x="37" y="155">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-26-2 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <collision-left comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-left>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

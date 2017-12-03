@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortogroup comment="false" x="31" y="49">
+            <group eventID="1" id="-1">
+                <if comment="false" x="42" y="81">
+                    <group eventID="1" id="-1">
+                        <play-sound4 comment="false" x="53" y="114">
+                            <int id="0" val="0"/>
+                            <sound eid="95" id="1"/>
+                        </play-sound4>
+                        <die comment="false" x="53" y="141">
+                            <ACTOR eid="var" id="0" vid="2147483647"/>
+                        </die>
+                    </group>
+                    <collision-top comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <int id="1" val="0"/>
+                    </collision-top>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <get-val-20-1 comment="false" id="1" x="0" y="0"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
